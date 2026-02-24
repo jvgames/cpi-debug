@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #001f3f, #0074D9);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.hex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hex {
+    width: 150px;
+    height: 86px;
+    background: #00c3ff;
+    position: relative;
+    margin: 43px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hex:before,
+.hex:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+
+.hex:before {
+    bottom: 100%;
+    border-bottom: 43px solid #00c3ff;
+}
+
+.hex:after {
+    top: 100%;
+    width: 0;
+    border-top: 43px solid #00c3ff;
+}
+
+.hex:hover {
+    background: #00ffff;
+}
+
+.hex a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 30px;
+}
